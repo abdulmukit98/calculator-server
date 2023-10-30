@@ -1,23 +1,23 @@
 ﻿# calculator-server
 
-- In project folder create **calculator.js** 
-- Set up a new NPM package
+1. In project folder create **calculator.js** 
+2. Set up a new NPM package
 
 ```
 $ npm init
 ```
 
-- Using NPM install the express module
+3. Using NPM install the express module
 ```
 $ npm install express
 ```
 
-- Install npm body-parser package
+4. Install npm body-parser package
 ```
 $ npm install body-parser
 ```
 
-- Require express and body-parser in your calculator.js
+5. Require express and body-parser in your calculator.js
 ```
   const express = require('express');
   const app = express();
@@ -27,14 +27,14 @@ $ npm install body-parser
 
 ```
 
-- Use app.get to set-up file to localhost
+6. Use app.get to set-up file to localhost
 ```
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 });
 ```
 
-- use app.post() to add functionality to user interaction
+7. use app.post() to add functionality to user interaction
 ````
   
   app.post("/", function(req, res) {
@@ -48,7 +48,23 @@ app.get("/", function(req, res) {
 
 ````
 
-- Install **nodemon**
+8. Start server to port 3000
+````
+    app.listen(3000, function() {
+      console.log("App running at port 3000");
+    });
+
+````
+
+9. Install **nodemon**
 ```
 npm install -g nodemon
 ```
+
+10. run server through terninal
+````
+nodemon calculator.js
+````
+
+
+__ Developed by: Abdul Mukit __
