@@ -16,6 +16,11 @@ $ npm install express
 ```
 $ npm install body-parser
 ```
+Body Parser code in JS
+````
+const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({extended: true}));
+````
 
 5. Require express and body-parser in your calculator.js
 ```
